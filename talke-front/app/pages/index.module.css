@@ -1,11 +1,10 @@
 .container {
   width: 100%;
-  background: black;
+  background-color: black;
 }
 
 .title {
-  color: white;
   font-size: 24px;
+  color: white;
   font-weight: bold;
-  text-align: center;
 }
