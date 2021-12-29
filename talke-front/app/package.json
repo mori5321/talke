@@ -1,5 +1,5 @@
 {
-  "name": "talke-front/app",
+  "name": "app",
   "private": true,
   "scripts": {
     "dev": "next dev",

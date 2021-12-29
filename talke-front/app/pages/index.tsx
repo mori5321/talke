@@ -1,7 +1,7 @@
 import * as React from "react";
 // import Head from "next/head";
 // import Image from "next/image";
-import styles from "./Index.module.css";
+import styles from "../styles/pages/Index.module.css";
 
 const IndexPage = () => {
   return (
