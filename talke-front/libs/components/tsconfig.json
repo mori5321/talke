@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "typeRoots": ["node_modules/@types", "types/**/*"],
+    "typeRoots": ["./types", "node_modules/@types"],
     "sourceMap": true,
     "target": "ES5",
     "module": "CommonJS",
@@ -27,6 +27,6 @@
     "noEmit": true,
     "isolatedModules": true
   },
-  "include": ["public/**/*", "pages/**/*", "styles/**/*", "next-env.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.css", "types/**/*.ts"],
   "exclude": ["node_modules", ".eslintrc.js"]
 }

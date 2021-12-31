@@ -1,6 +1,7 @@
 {
   "devDependencies": {},
   "name": "talke-front",
+  "private": true,
   "workspaces": [
     "app",
     "libs/*"
