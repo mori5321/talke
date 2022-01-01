@@ -1,5 +1,8 @@
-.chatRoomWrapper {
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
+.listWrapper {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  // grid-template-columns: repeat(auto-fit, minmax(calc(100% / 2 - 8px), 480px));
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-gap: 16px;
 }

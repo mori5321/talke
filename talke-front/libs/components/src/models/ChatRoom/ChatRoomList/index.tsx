@@ -1,26 +1,17 @@
-import styles from './index.modules.scss'
+import { ComponentProps } from 'react'
+import { ChatRoomCard } from '../ChatRoomCard'
 
-type ChatRoomPanelProps = {
-  title: string;
-  description: string;
-};
-
-const ChatRoomPanel = ({ title, description }: ChatRoomPanelProps) => (
-  <div className={styles.chatRoomWrapper}>
-    <p>{title}</p>
-    <p>{description}</p>
-  </div>
-)
+import style from './index.modules.scss'
 
 type ChatRoomListProps = {
-  chatRooms: ChatRoomPanelProps[];
+  chatRooms: ComponentProps<typeof ChatRoomCard>[];
 };
 
 export const ChatRoomList = ({ chatRooms }: ChatRoomListProps) => {
   return (
-    <div>
+    <div className={style.listWrapper}>
       {chatRooms.map((chatRoom) => (
-        <ChatRoomPanel {...chatRoom} />
+        <ChatRoomCard {...chatRoom} />
       ))}
     </div>
   )

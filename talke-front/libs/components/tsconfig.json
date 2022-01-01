@@ -25,7 +25,8 @@
     "resolveJsonModule": true,
     "incremental": true,
     "noEmit": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "strictBindCallApply": true
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.css", "types/**/*.ts"],
   "exclude": ["node_modules", ".eslintrc.js"]

@@ -1,9 +1,12 @@
+import { ChatRoomList } from '../../models/ChatRoom/ChatRoomList'
+import { ComponentProps } from 'react'
+
 type TopLayoutProps = {
-  title: string;
+  chatRoomListProps: ComponentProps<typeof ChatRoomList>;
 };
 
-const TopLayout = ({ title }: TopLayoutProps): JSX.Element => (
-  <div>{title}</div>
+const TopLayout = ({ chatRoomListProps }: TopLayoutProps): JSX.Element => (
+  <ChatRoomList {...chatRoomListProps} />
 )
 
 export { TopLayout }
