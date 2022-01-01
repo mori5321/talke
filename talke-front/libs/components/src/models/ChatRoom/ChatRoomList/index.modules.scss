@@ -2,7 +2,10 @@
   width: 100%;
   display: grid;
   justify-content: center;
-  // grid-template-columns: repeat(auto-fit, minmax(calc(100% / 2 - 8px), 480px));
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    grid-template-columns: repeat(auto-fit, 100%);
   grid-gap: 16px;
+  
+  @media (min-width: 600px) {
+  grid-template-columns: repeat(auto-fit, calc(100% / 2 - 8px)); 
+  }
 }

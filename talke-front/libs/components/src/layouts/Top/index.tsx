@@ -1,4 +1,5 @@
 import { ChatRoomList } from '../../models/ChatRoom/ChatRoomList'
+import { BasicTemplate } from '../../templates'
 import { ComponentProps } from 'react'
 
 type TopLayoutProps = {
@@ -6,7 +7,9 @@ type TopLayoutProps = {
 };
 
 const TopLayout = ({ chatRoomListProps }: TopLayoutProps): JSX.Element => (
-  <ChatRoomList {...chatRoomListProps} />
+  <BasicTemplate>
+    <ChatRoomList {...chatRoomListProps} />
+  </BasicTemplate>
 )
 
 export { TopLayout }
