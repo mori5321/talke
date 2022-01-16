@@ -1,4 +1,4 @@
-import styles from './index.modules.scss'
+import styles from './index.module.scss'
 
 type CardProps = {
   title: string;

@@ -1,7 +1,7 @@
 import { ComponentProps } from 'react'
 import { ChatRoomCard } from '../ChatRoomCard'
 
-import style from './index.modules.scss'
+import style from './index.module.scss'
 
 type ChatRoomListProps = {
   chatRooms: ComponentProps<typeof ChatRoomCard>[];
