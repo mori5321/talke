@@ -2,8 +2,15 @@
   "devDependencies": {},
   "name": "talke-front",
   "private": true,
+  "scripts": {
+    "compile": "tsc -b tsconfig.build.json"
+  },
   "workspaces": [
     "app",
     "libs/*"
-  ]
+  ],
+  "dependencies": {
+    "app": "1.0.0",
+    "components": "1.0.0"
+  }
 }

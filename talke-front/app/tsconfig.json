@@ -23,10 +23,12 @@
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "incremental": true,
-    "noEmit": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "composite": true,
+    "outDir": "dist",
+    "incremental": true
   },
   "include": ["public/**/*", "pages/**/*", "styles/**/*", "next-env.d.ts"],
-  "exclude": ["node_modules", ".eslintrc.js"]
+  "exclude": ["node_modules", ".eslintrc.js"],
+  "references": [{ "path": "../libs/components" }]
 }

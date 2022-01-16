@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
-    "composite": true,
     "typeRoots": ["./types", "node_modules/@types"],
     "sourceMap": true,
     "jsx": "react-jsx",
     "lib": ["es2020", "dom"],
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "rootDir": "src",
+    "outDir": "dist",
     "esModuleInterop": true,
     "allowJs": false,
     "allowUnreachableCode": false,
@@ -21,9 +20,10 @@
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "incremental": true,
     "isolatedModules": false,
-    "strictBindCallApply": true
+    "strictBindCallApply": true,
+    "composite": true,
+    "inceremental": true
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.scss", "types/**/*.ts"],
   "exclude": ["node_modules", ".eslintrc.js"]
