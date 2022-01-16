@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
-    "typeRoots": ["node_modules/@types", "types/**/*"],
+    "typeRoots": [
+      "node_modules/@types",
+      "types/**/*"
+    ],
     "sourceMap": true,
     "target": "ES5",
     "module": "CommonJS",
     "jsx": "preserve",
     "moduleResolution": "node",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "baseUrl": "./",
     "paths": {},
     "esModuleInterop": true,
@@ -26,9 +32,22 @@
     "isolatedModules": true,
     "composite": true,
     "outDir": "dist",
-    "incremental": true
+    "incremental": true,
+    "noEmit": true
   },
-  "include": ["public/**/*", "pages/**/*", "styles/**/*", "next-env.d.ts"],
-  "exclude": ["node_modules", ".eslintrc.js"],
-  "references": [{ "path": "../libs/components" }]
+  "include": [
+    "public/**/*",
+    "pages/**/*",
+    "styles/**/*",
+    "next-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".eslintrc.js"
+  ],
+  "references": [
+    {
+      "path": "../libs/components"
+    }
+  ]
 }
