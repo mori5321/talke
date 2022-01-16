@@ -19,10 +19,12 @@ export const ChatRoomCard = ({
     actions={[
       {
         title: 'Delete',
+        testId: 'onDelete',
         onClick: onDelete
       },
       {
         title: 'Enter',
+        testId: 'onEnter',
         onClick: onEnter
       }
     ]}

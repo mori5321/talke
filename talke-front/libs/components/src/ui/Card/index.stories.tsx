@@ -16,10 +16,12 @@ Basic.args = {
   actions: [
     {
       title: 'Delete',
+      testId: 'onDelete',
       onClick: () => action('Hoge')
     },
     {
       title: 'Enter',
+      testId: 'onEnter',
       onClick: () => action('Hoge')
     }
   ]

@@ -5,6 +5,7 @@ type CardProps = {
   description: string;
   actions?: {
     title: string;
+    testId: string;
     onClick: () => void;
   }[];
 };
@@ -18,8 +19,13 @@ export const Card = ({ title, description, actions }: CardProps) => (
         <hr className={styles.separator} />
         <div className={styles.actionGroup}>
           {actions.map((action) => (
-            <button onClick={action.onClick}>{action.title}</button>
+            <button data-testid={action.testId} onClick={action.onClick}>
+              {action.title}
+            </button>
           ))}
+        </div>
+        <div>
+          <input type="text" data-testid="input" />
         </div>
       </>
     )}
